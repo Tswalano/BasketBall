@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.codetribe.basketball.Main2Activity"
+    android:background="@drawable/bsk">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="60dp"
+        android:paddingBottom="25dp"
+        android:text="FInal Score"
+        android:textAllCaps="true"
+        android:textSize="35sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/score"
+        android:text="Home"
+        android:layout_toLeftOf="@+id/spacer"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/score"
+        android:text="Away"
+        android:layout_toRightOf="@+id/spacer"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/scoreHistoryA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/A"
+        android:layout_toLeftOf="@+id/spacer"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/scoreHistoryB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/A"
+        android:layout_toRightOf="@+id/spacer"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"/>
+
+    <View
+        android:id="@+id/spacer"
+        android:layout_width="1sp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/score"
+        android:background="#fff"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
